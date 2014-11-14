@@ -62,7 +62,7 @@ pirol                   86400     IN        AAAA  fda1:384a:74de:4242:215:afff:f
 ;
 radio-caroline          86400     IN        AAAA  fda1:384a:74de:4242:ba27:ebff:fe5e:3ba0
 www.radio-caroline      86400     IN        CNAME radio-caroline
-repository              86400     IN        AAAA  opkg.services
+repository              86400     IN        CNAME opkg.services
 russee1                 86400     IN        AAAA  fda1:384a:74de:4242::65
 russee2                 86400     IN        AAAA  fda1:384a:74de:4242::67
 ; services
