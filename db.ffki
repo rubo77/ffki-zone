@@ -4,12 +4,12 @@ $ORIGIN ffki.
                                   IN        NS   vpn1.ffki.
                                   IN        NS   vpn4.ffki
 ;
-alfred                  86400     IN        CNAME srv
+alfred                  86400     IN        CNAME services
 ;
 crushinator             86400     IN        CNAME radio-caroline
 www.crushinator         86400     IN        CNAME radio-caroline
 ;
-debian                  86400     IN        CNAME srv
+debian                  86400     IN        CNAME services
 ; eichhof - wklaebe@toppoint.de
 eichhof                 86400     IN        NS    ns1.eichhof
 eichhof                 86400     IN        NS    ns2.eichhof
@@ -22,8 +22,8 @@ freeway                 86400     IN        AAAA  fda1:384a:74de:4242::66
 freifunk                86400     IN        AAAA  fda1:384a:74de:4242::1
 freifunk                86400     IN        A     10.116.128.1
 ;
-git                     86400     IN        CNAME freifunk.ffki.
-graph                   86400     IN        CNAME freifunk.ffki.
+git                     86400     IN        CNAME services
+graph                   86400     IN        CNAME services
 ;
 kilux                   86400     IN        AAAA  fda1:384a:74de:4242:6670:2ff:fec0:a40e
 www.kilux               86400     IN        CNAME kilux
@@ -35,7 +35,7 @@ www.leaena              86400     IN        CNAME leaena
 local-node              86400     IN        A     10.116.254.254
 local-node              86400     IN        AAAA  fda1:384a:74de:4242::ffff
 ;
-map                     86400     IN        CNAME freifunk.ffki.
+map                     86400     IN        CNAME services
 ; medusa - sargon@toppoint.de
 medusa                  86400     IN        NS    ns1.medusa.ffki.
                                             NS    ns2.medusa.ffki.
@@ -66,6 +66,8 @@ repository              86400     IN        AAAA  opkg.services
 russee1                 86400     IN        AAAA  fda1:384a:74de:4242::65
 russee2                 86400     IN        AAAA  fda1:384a:74de:4242::67
 ; services
+services                86400     IN        A     10.116.240.6
+                                            AAAA  fda1:384a:74de:4242::6
 ntp.services            86400     IN        CNAME 0.ntp.services
 ntp.services            86400     IN        CNAME 1.ntp.services
 ntp.services            86400     IN        CNAME 4.ntp.services
