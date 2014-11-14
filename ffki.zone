@@ -1,0 +1,88 @@
+$TTL 86400
+$ORIGIN ffki.
+@                                 IN        SOA  vpn0.ffki ffki-noc.freifunk.in-kiel.de. 2014111400 1h 15m 1w 1d
+                                  IN        NS   vpn1.ffki.
+                                  IN        NS   vpn4.ffki
+;
+alfred                  86400     IN        CNAME srv
+;
+crushinator             86400     IN        CNAME radio-caroline
+www.crushinator         86400     IN        CNAME radio-caroline
+;
+debian                  86400     IN        CNAME srv
+; eichhof - wklaebe@toppoint.de
+eichhof                 86400     IN        NS    ns1.eichhof
+eichhof                 86400     IN        NS    ns2.eichhof
+ns1.eichhof             85697     IN        AAAA  fda1:384a:74de:4242::555
+ns1.eichhof             85926     IN        A     10.116.255.5
+ns2.eichhof             86032     IN        A     10.116.255.5
+ns2.eichhof             86032     IN        AAAA  fda1:384a:74de:4242::555
+;
+freeway                 86400     IN        AAAA  fda1:384a:74de:4242::66
+freifunk                86400     IN        AAAA  fda1:384a:74de:4242::1
+freifunk                86400     IN        A     10.116.128.1
+;
+git                     86400     IN        CNAME freifunk.ffki.
+graph                   86400     IN        CNAME freifunk.ffki.
+;
+kilux                   86400     IN        AAAA  fda1:384a:74de:4242:6670:2ff:fec0:a40e
+www.kilux               86400     IN        CNAME kilux
+krah                    86400     IN        AAAA  fda1:384a:74de:4242:ba27:ebff:fe5e:3ba0
+www.krah                86400     IN        CNAME krah
+;
+leaena                  86400     IN        AAAA  fda1:384a:74de:4242:f6ec:38ff:fee3:cbce
+www.leaena              86400     IN        CNAME leaena
+local-node              86400     IN        A     10.116.254.254
+local-node              86400     IN        AAAA  fda1:384a:74de:4242::ffff
+;
+map                     86400     IN        CNAME freifunk.ffki.
+; medusa - sargon@toppoint.de
+medusa                  86400     IN        NS    ns1.medusa.ffki.
+                                            NS    ns2.medusa.ffki.
+                                            A     10.116.240.1
+                                            AAAA  fda1:384a:74de:4242::2
+ns1.medusa              86400     IN        A     10.116.240.1
+                                            AAAA  fda1:384a:74de:4242::2
+ns2.medusa              86400     IN        A     10.116.240.1
+                                            AAAA  fda1:384a:74de:4242::2
+;
+node                    86400     IN        A     10.116.254.254
+node                    86400     IN        AAAA  fda1:384a:74de:4242::ffff
+ns0                     86400     IN        CNAME vpn0
+ns1                     86400     IN        CNAME vpn1
+ns4                     86400     IN        CNAME vpn4
+;
+pgp                     86400     IN        A     10.116.136.1
+pgp                     86400     IN        AAAA  fda1:384a:74de:4242::2c6b
+; plagis - {wonka,sargon}@toppoint.de
+pi.plagis               86400     IN        AAAA  fda1:384a:74de:4242:ba27:ebff:fe38:5811
+www.pi.plagis           86400     IN        CNAME pi.plagis
+;
+pirol                   86400     IN        AAAA  fda1:384a:74de:4242:215:afff:fea5:fdc8
+;
+radio-caroline          86400     IN        AAAA  fda1:384a:74de:4242:ba27:ebff:fe5e:3ba0
+www.radio-caroline      86400     IN        CNAME radio-caroline
+repository              86400     IN        AAAA  opkg.services
+russee1                 86400     IN        AAAA  fda1:384a:74de:4242::65
+russee2                 86400     IN        AAAA  fda1:384a:74de:4242::67
+; services
+ntp.services            86400     IN        CNAME 0.ntp.services
+ntp.services            86400     IN        CNAME 1.ntp.services
+ntp.services            86400     IN        CNAME 4.ntp.services
+0.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff00
+1.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff01
+4.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff04
+opkg.services           86400     IN        CNAME 0.opkg.services
+opkg.services           86400     IN        CNAME 1.opkg.services
+0.opkg.services         86400     IN        AAAA  fda1:384a:74de:4242::ff00
+1.opkg.services         86400     IN        AAAA  fda1:384a:74de:4242::ff01
+;
+tp-router               86400     IN        A     10.116.240.4
+                                            AAAA  fda1:384a:74de:4242::a74:f004
+;
+vpn0                    86400     IN        A     10.116.160.1
+                                            AAAA  fda1:384a:74de:4242::ff00
+vpn1                    86400     IN        A     10.116.136.1
+                                            AAAA  fda1:384a:74de:4242::ff01
+vpn4                    86400     IN        A     10.116.152.1
+                                            AAAA  fda1:384a:74de:4242::ff04
