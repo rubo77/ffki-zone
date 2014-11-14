@@ -68,9 +68,9 @@ russee2                 86400     IN        AAAA  fda1:384a:74de:4242::67
 ; services
 services                86400     IN        A     10.116.240.6
                                             AAAA  fda1:384a:74de:4242::6
-ntp.services            86400     IN        CNAME 0.ntp.services
-ntp.services            86400     IN        CNAME 1.ntp.services
-ntp.services            86400     IN        CNAME 4.ntp.services
+ntp.services            86400     IN        AAAA  fda1:384a:74de:4242::ff00
+                                            AAAA  fda1:384a:74de:4242::ff01
+                                            AAAA  fda1:384a:74de:4242::ff04
 0.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff00
 1.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff01
 4.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff04
