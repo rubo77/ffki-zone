@@ -60,6 +60,7 @@ www.pi.plagis           86400     IN        CNAME pi.plagis
 ;
 pirol                   86400     IN        AAAA  fda1:384a:74de:4242:215:afff:fea5:fdc8
 ;
+redmine                 86400     IN        CNAME services
 radio-caroline          86400     IN        AAAA  fda1:384a:74de:4242:ba27:ebff:fe5e:3ba0
 www.radio-caroline      86400     IN        CNAME radio-caroline
 repository              86400     IN        CNAME opkg.services
