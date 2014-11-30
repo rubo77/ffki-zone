@@ -88,3 +88,8 @@ vpn1                    86400     IN        A     10.116.136.1
                                             AAAA  fda1:384a:74de:4242::ff01
 vpn4                    86400     IN        A     10.116.152.1
                                             AAAA  fda1:384a:74de:4242::ff04
+
+; Adrian <adk@toppoint.de>
+freifon                 86400     IN        A     10.116.240.7
+                                            AAAA  fda1:384a:74de:4242::7
+sip                     8640      IN        CNAME freifon
