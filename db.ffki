@@ -1,6 +1,6 @@
 $TTL 86400
 $ORIGIN ffki.
-@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2014120101 1h 15m 1w 1d
+@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2014120102 1h 15m 1w 1d
                                   IN        NS    vpn1
                                   IN        NS    vpn4
 ;
@@ -95,7 +95,9 @@ freifon                 86400     IN        A     10.116.240.7
 sip                     86400     IN        CNAME freifon
 
 ; Christopher <freifunk@kleen.ch>
-jabber                  86400     IN        A     10.116.250.11
+jabber                  86400     IN        A     10.116.250.10
+                                            A     10.116.250.11
                                             A     10.116.250.12
+                                            AAAA  fda1:384a:74de:4242:250::10
                                             AAAA  fda1:384a:74de:4242:250::11
                                             AAAA  fda1:384a:74de:4242:250::12
