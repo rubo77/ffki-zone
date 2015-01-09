@@ -75,8 +75,8 @@ ntp.services            86400     IN        AAAA  fda1:384a:74de:4242::ff00
 0.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff00
 1.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff01
 4.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff04
-0.opkg.services         86400     IN        AAAA  fda1:384a:74de:4242::ff00
-1.opkg.services         86400     IN        AAAA  fda1:384a:74de:4242::ff01
+opkg.services           86400     IN        CNAME services
+0.opkg.services         86400     IN        CNAME services
 ;
 status                  86400     IN        CNAME services
 ;
