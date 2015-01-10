@@ -1,6 +1,6 @@
 $TTL 86400
 $ORIGIN ffki.
-@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2014120102 1h 15m 1w 1d
+@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2015011001 1h 15m 1w 1d
                                   IN        NS    vpn1
                                   IN        NS    vpn4
 ;
@@ -92,7 +92,10 @@ vpn4                    86400     IN        A     10.116.152.1
 ;
 wiki                    86400     IN        CNAME services
 www.wiki                86400     IN        CNAME services
-
+;
+gluon                   86400     IN        A     10.116.240.8
+											AAAA  fda1:384a:74de:4242::2
+www.gluon               86400     IN        CNAME gluon
 
 ; Adrian <adk@toppoint.de>
 freifon                 86400     IN        A     10.116.240.7
