@@ -94,7 +94,7 @@ wiki                    86400     IN        CNAME services
 www.wiki                86400     IN        CNAME services
 ;
 gluon                   86400     IN        A     10.116.240.8
-											AAAA  fda1:384a:74de:4242::2
+					    AAAA  fda1:384a:74de:4242::2
 www.gluon               86400     IN        CNAME gluon
 
 ; Adrian <adk@toppoint.de>
