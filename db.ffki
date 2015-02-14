@@ -1,7 +1,7 @@
 $TTL 86400
 $ORIGIN ffki.
-@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2015011201 1h 15m 1w 1d
-                                  IN        NS    vpn1
+@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2015021401 1h 15m 1w 1d
+                                  IN        NS    vpn2
                                   IN        NS    vpn4
 ;
 alfred                  86400     IN        CNAME services
@@ -88,8 +88,8 @@ tp-router               86400     IN        A     10.116.240.4
 ;
 vpn0                    86400     IN        A     10.116.160.1
                                             AAAA  fda1:384a:74de:4242::ff00
-vpn1                    86400     IN        A     10.116.136.1
-                                            AAAA  fda1:384a:74de:4242::ff01
+vpn2                    86400     IN        A     10.116.168.1
+                                            AAAA  fda1:384a:74de:4242::ff02
 vpn4                    86400     IN        A     10.116.152.1
                                             AAAA  fda1:384a:74de:4242::ff04
 ;
