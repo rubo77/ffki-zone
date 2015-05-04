@@ -52,6 +52,7 @@ node                    86400     IN        A     10.116.254.254
 node                    86400     IN        AAAA  fda1:384a:74de:4242::ffff
 ns0                     86400     IN        CNAME vpn0
 ns1                     86400     IN        CNAME vpn1
+ns2                     86400     IN        CNAME vpn2
 ns4                     86400     IN        CNAME vpn4
 ;
 pgp                     86400     IN        A     10.116.136.1
