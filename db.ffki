@@ -1,6 +1,6 @@
 $TTL 86400
 $ORIGIN ffki.
-@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2015062601 1h 15m 1w 1d
+@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2015070701 1h 15m 1w 1d
                                   IN        NS	  vpn1
                                   IN        NS    vpn2
                                   IN        NS    vpn4
@@ -11,13 +11,13 @@ crushinator             86400     IN        CNAME radio-caroline
 www.crushinator         86400     IN        CNAME radio-caroline
 ;
 debian                  86400     IN        CNAME services
-; eichhof - wklaebe@toppoint.de
-eichhof                 86400     IN        NS    ns1.eichhof
-eichhof                 86400     IN        NS    ns2.eichhof
-ns1.eichhof             85697     IN        AAAA  fda1:384a:74de:4242::555
-ns1.eichhof             85926     IN        A     10.116.255.5
-ns2.eichhof             86032     IN        A     10.116.255.5
-ns2.eichhof             86032     IN        AAAA  fda1:384a:74de:4242::555
+; sk36 - wklaebe@toppoint.de
+sk36                    86400     IN        NS    ns1.sk36
+sk36                    86400     IN        NS    ns2.sk36
+ns1.sk36                86400     IN        AAAA  fda1:384a:74de:4242::555
+ns1.sk36                86400     IN        A     10.116.255.5
+ns2.sk36                86400     IN        A     10.116.255.5
+ns2.sk36                86400     IN        AAAA  fda1:384a:74de:4242::555
 ;
 freeway                 86400     IN        AAAA  fda1:384a:74de:4242::66
 ;
