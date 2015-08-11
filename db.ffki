@@ -123,3 +123,7 @@ jabber                  86400     IN        A     10.116.250.10
 chat                    86400     IN        A     10.116.156.86 
                                             AAAA  fda1:384a:74de:4242:349c:35ff:fe04:be30
 vmux                    86400     IN        CNAME chat
+
+; MTRNord, Tarp
+nordgedanken            86400     IN        A     10.116.240.11
+                                            AAAA  fda1:384a:74de:4242:250::4
