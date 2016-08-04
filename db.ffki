@@ -100,8 +100,12 @@ vpn1                    86400     IN        A     10.116.136.1
                                             AAAA  fda1:384a:74de:4242::ff01
 vpn2                    86400     IN        A     10.116.168.1
                                             AAAA  fda1:384a:74de:4242::ff02
+vpn3                    86400     IN        A     10.116.144.1
+                                            AAAA  fda1:384a:74de:4242::ff03
 vpn4                    86400     IN        A     10.116.152.1
                                             AAAA  fda1:384a:74de:4242::ff04
+vpn5                    86400     IN        A     10.116.176.1
+                                            AAAA  fda1:384a:74de:4242::ff05
 ;
 wiki                    86400     IN        CNAME services
 www.wiki                86400     IN        CNAME services
