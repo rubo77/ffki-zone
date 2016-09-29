@@ -1,44 +1,38 @@
 $TTL 86400
 $ORIGIN ffki.
-@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2015094901 1h 15m 1w 1d
+@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2016092901 1h 15m 1w 1d
                                   IN        NS	  vpn1
                                   IN        NS    vpn2
                                   IN        NS    vpn4
-;
-alfred                  86400     IN        CNAME services
+
 ;
 crushinator             86400     IN        CNAME radio-caroline
 www.crushinator         86400     IN        CNAME radio-caroline
-;
-debian                  86400     IN        CNAME services
-; sk36 - wklaebe@toppoint.de
+
+; ##### sk36 - wklaebe@toppoint.de
 ns1.sk36                86400     IN        AAAA  fda1:384a:74de:4242::555
 ns1.sk36                86400     IN        A     10.116.255.5
 ns2.sk36                86400     IN        A     10.116.255.5
 ns2.sk36                86400     IN        AAAA  fda1:384a:74de:4242::555
 sk36                    86400     IN        NS    ns1.sk36
 sk36                    86400     IN        NS    ns2.sk36
-;
+
+; #####
 freeway                 86400     IN        AAAA  fda1:384a:74de:4242::66
-;
-git                     86400     IN        CNAME services
-graph                   86400     IN        CNAME services
-gluon                   86400     IN        A     10.116.240.8
-                                            AAAA  fda1:384a:74de:4242::fd01
-www.gluon               86400     IN        CNAME gluon
-;
+
+; #####
 kilux                   86400     IN        AAAA  fda1:384a:74de:4242:6670:2ff:fec0:a40e
 www.kilux               86400     IN        CNAME kilux
+
+; ##### Ommels Radio
 krah                    86400     IN        AAAA  fda1:384a:74de:4242:ba27:ebff:fe5e:3ba0
 www.krah                86400     IN        CNAME krah
-;
+
+; #####
 leaena                  86400     IN        AAAA  fda1:384a:74de:4242:f6ec:38ff:fee3:cbce
 www.leaena              86400     IN        CNAME leaena
-local-node              86400     IN        A     10.116.254.254
-local-node              86400     IN        AAAA  fda1:384a:74de:4242::ffff
-;
-map                     86400     IN        CNAME services
-; medusa - sargon@toppoint.de
+
+; ##### medusa - sargon@toppoint.de
 medusa                  86400     IN        NS    ns1.medusa.ffki.
                                             NS    ns2.medusa.ffki.
                                             A     10.116.240.1
@@ -47,53 +41,80 @@ ns1.medusa              86400     IN        A     10.116.240.1
                                             AAAA  fda1:384a:74de:4242::2
 ns2.medusa              86400     IN        A     10.116.240.1
                                             AAAA  fda1:384a:74de:4242::2
-;
-mesh			86400	  IN	            CNAME services
-www.mesh                86400     IN        CNAME services
-;
+
+; ##### Next-Node
 node                    86400     IN        A     10.116.254.254
-node                    86400     IN        AAAA  fda1:384a:74de:4242::ffff
+                                            AAAA  fda1:384a:74de:4242::ffff
+local-node              86400     IN        CNAME node
+localnode               86400     IN        CNAME node
+next-node               86400     IN        CNAME node
+nextnode                86400     IN        CNAME node
+
+; ##### Nameserver
 ns0                     86400     IN        CNAME vpn0
 ns1                     86400     IN        CNAME vpn1
 ns2                     86400     IN        CNAME vpn2
 ns4                     86400     IN        CNAME vpn4
-;
+
+; ##### PGP
 pgp                     86400     IN        A     10.116.136.1
 pgp                     86400     IN        AAAA  fda1:384a:74de:4242::2c6b
-; plagis - {wonka,sargon}@toppoint.de
+
+; ##### plagis - {wonka,sargon}@toppoint.de
 pi.plagis               86400     IN        AAAA  fda1:384a:74de:4242:ba27:ebff:fe38:5811
 www.pi.plagis           86400     IN        CNAME pi.plagis
 ;
 pirol                   86400     IN        AAAA  fda1:384a:74de:4242:215:afff:fea5:fdc8
 ;
-redmine                 86400     IN        CNAME services
 radio-caroline          86400     IN        AAAA  fda1:384a:74de:4242:ba27:ebff:fe5e:3ba0
 www.radio-caroline      86400     IN        CNAME radio-caroline
 repository              86400     IN        CNAME opkg.services
 russee1                 86400     IN        AAAA  fda1:384a:74de:4242::65
 russee2                 86400     IN        AAAA  fda1:384a:74de:4242::67
-; services
-services                86400     IN        A     10.116.240.6
+
+; #####services
+services-old            86400     IN        A     10.116.240.6
                                             AAAA  fda1:384a:74de:4242::6
+services                86400     IN        A     10.116.250.1
+                                            AAAA  fda1:384a:74de:4242::cc00
+redmine                 86400     IN        CNAME services
+status                  86400     IN        CNAME services
+wiki                    86400     IN        CNAME services
+www.wiki                86400     IN        CNAME services
+map                     86400     IN        CNAME services
+git                     86400     IN        CNAME services
+graph                   86400     IN        CNAME services
+gluon                   86400     IN        CNAME services
+www.gluon               86400     IN        CNAME services
+; ##### Meshviewer
+mesh			86400	  IN	    CNAME services
+www.mesh                86400     IN        CNAME services
+debian                  86400     IN        CNAME services
+alfred                  86400     IN        CNAME services
+
+; ##### NTP
 ntp.services            86400     IN        AAAA  fda1:384a:74de:4242::ff00
                                             AAAA  fda1:384a:74de:4242::ff01
-                                            AAAA  fda1:384a:74de:4242::ff04
+;                                            AAAA  fda1:384a:74de:4242::ff04
 0.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff00
 1.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff01
-4.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff04
+; 4.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff04
+
+
+; ##### OpenWrt Repos
 opkg.services           86400     IN        AAAA  fda1:384a:74de:4242::6
 0.opkg.services         86400     IN        AAAA  fda1:384a:74de:4242::6
-;
-status                  86400     IN        CNAME services
-;
+1.opkg.services         86400     IN        AAAA  fda1:384a:74de:4242::cc00
 
-;StickyKhorne
+; ##### StickyKhorne
 StickyKhorne            86400     IN        A     10.116.240.9
                                             AAAA  fda1:384a:74de:4242::9
 
+; ##### Toppoint
 tp-router               86400     IN        A     10.116.240.4
                                             AAAA  fda1:384a:74de:4242::a74:f004
-;
+
+; ##### VPNs
 vpn0                    86400     IN        A     10.116.160.1
                                             AAAA  fda1:384a:74de:4242::ff00
 vpn1                    86400     IN        A     10.116.136.1
@@ -106,16 +127,13 @@ vpn4                    86400     IN        A     10.116.152.1
                                             AAAA  fda1:384a:74de:4242::ff04
 vpn5                    86400     IN        A     10.116.176.1
                                             AAAA  fda1:384a:74de:4242::ff05
-;
-wiki                    86400     IN        CNAME services
-www.wiki                86400     IN        CNAME services
 
-; Adrian <adk@toppoint.de>
+; ##### Adrian <adk@toppoint.de>
 freifon                 86400     IN        A     10.116.240.7
                                             AAAA  fda1:384a:74de:4242::7
 sip                     86400     IN        CNAME freifon
 
-; Christopher <freifunk@kleen.ch>
+; ##### Christopher <freifunk@kleen.ch>
 jabber                  86400     IN        A     10.116.250.10
                                             A     10.116.250.11
                                             A     10.116.250.12
@@ -123,14 +141,10 @@ jabber                  86400     IN        A     10.116.250.10
                                             AAAA  fda1:384a:74de:4242:250::11
                                             AAAA  fda1:384a:74de:4242:250::12
 
-; Luftloch (dag0b3rt)
+; ##### Luftloch (dag0b3rt)
 chat                    86400     IN        A     10.116.156.86 
                                             AAAA  fda1:384a:74de:4242:349c:35ff:fe04:be30
 vmux                    86400     IN        CNAME chat
 yacy                    86400     IN        A     10.116.240.20
 x                       86400     IN        A     10.116.240.27
 
-; MTRNord, Tarp
-nordgedanken            86400     IN        A     10.116.240.11
-                                            AAAA  fda1:384a:74de:4242::4
-pod.nordgedanken        86400     IN        CNAME nordgedanken
