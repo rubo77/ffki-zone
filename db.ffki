@@ -1,6 +1,6 @@
 $TTL 86400
 $ORIGIN ffki.
-@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2016110101 1h 15m 1w 1d
+@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2016110102 1h 15m 1w 1d
                                   IN        NS	  vpn1
                                   IN        NS    vpn2
                                   IN        NS    vpn3
@@ -36,10 +36,12 @@ git                     86400     IN        CNAME services
 graph                   86400     IN        CNAME services
 gluon                   86400     IN        CNAME services
 www.gluon               86400     IN        CNAME services
-; ##### Meshviewer
-mesh			86400	  IN	    CNAME services
-www.mesh                86400     IN        CNAME services
 debian                  86400     IN        CNAME services
+www                     86400     IN        CNAME services
+; ##### Meshviewer
+mesh                    86400	    IN	      CNAME services
+mash                    86400	    IN   	    CNAME services
+www.mesh                86400     IN        CNAME services
 alfred                  86400     IN        CNAME services
 
 ; ##### NTP
