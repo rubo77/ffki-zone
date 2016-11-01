@@ -1,6 +1,6 @@
 $TTL 86400
 $ORIGIN ffki.
-@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2016092901 1h 15m 1w 1d
+@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2016110101 1h 15m 1w 1d
                                   IN        NS	  vpn1
                                   IN        NS    vpn2
                                   IN        NS    vpn3
@@ -58,9 +58,10 @@ ntp.services            86400     IN        AAAA  fda1:384a:74de:4242::ff00
 
 
 ; ##### OpenWrt Repos
-opkg.services           86400     IN        AAAA  fda1:384a:74de:4242::6
+opkg.services           86400     IN        AAAA  fda1:384a:74de:4242::cc00
 0.opkg.services         86400     IN        CNAME opkg.services
-1.opkg.services         86400     IN        AAAA  fda1:384a:74de:4242::cc00
+1.opkg.services         86400     IN        CNAME opkg.services
+old.opkg.services       86400     IN        AAAA  fda1:384a:74de:4242::6
 repository              86400     IN        CNAME opkg.services
 
 ; ##### Next-Node
@@ -136,7 +137,7 @@ jabber                  86400     IN        A     10.116.250.10
                                             AAAA  fda1:384a:74de:4242:250::12
 
 ; ##### Luftloch (dag0b3rt)
-chat                    86400     IN        A     10.116.156.86 
+chat                    86400     IN        A     10.116.156.86
                                             AAAA  fda1:384a:74de:4242:349c:35ff:fe04:be30
 vmux                    86400     IN        CNAME chat
 yacy                    86400     IN        A     10.116.240.20
@@ -156,4 +157,3 @@ www.krah                86400     IN        CNAME krah
 ; #####
 leaena                  86400     IN        AAAA  fda1:384a:74de:4242:f6ec:38ff:fee3:cbce
 www.leaena              86400     IN        CNAME leaena
-
