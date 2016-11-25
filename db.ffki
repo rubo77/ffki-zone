@@ -1,6 +1,6 @@
 $TTL 86400
 $ORIGIN ffki.
-@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2016111801 1h 15m 1w 1d
+@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2016112501 1h 15m 1w 1d
                                   IN        NS	  vpn1
                                   IN        NS    vpn2
                                   IN        NS    vpn3
@@ -21,9 +21,11 @@ vpn3                    86400     IN        A     10.116.144.1
 ;vpn4                    86400     IN        A     10.116.152.1
 ;                                            AAAA  fda1:384a:74de:4242::ff04
 vpn5                    86400     IN        A     10.116.176.1
-                                            AAAA  fda1:384a:74de:4242::ff06
+                                            AAAA  fda1:384a:74de:4242::ff05
 vpn6                    86400     IN        A     10.116.184.1
                                             AAAA  fda1:384a:74de:4242::ff06
+vpn7                    86400     IN        A     10.116.192.1
+                                            AAAA  fda1:384a:74de:4242::ff07
 
 ; ##### old services-freifunk.in-kiel.de
 services-old            86400     IN        A     10.116.240.6
