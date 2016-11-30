@@ -53,6 +53,11 @@ mesh                    86400	    IN	      CNAME services
 mash                    86400	    IN   	    CNAME services
 www.mesh                86400     IN        CNAME services
 alfred                  86400     IN        CNAME services
+hopglass                86400     IN        CNAME services
+
+; ##### Verlaeufe
+grafana                 86400     IN        CNAME services
+
 
 ; ##### buildserver
 firmware                86400     IN        A     10.116.137.220
