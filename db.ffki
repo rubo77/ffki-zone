@@ -76,6 +76,7 @@ ntp.services            86400     IN        AAAA  fda1:384a:74de:4242::ff00
 4.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff02
 5.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff05
 6.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff06
+7.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff07
 
 
 ; ##### OpenWrt Repos
@@ -100,6 +101,7 @@ ns2                     86400     IN        CNAME vpn2
 ns4                     86400     IN        CNAME vpn4
 ns5                     86400     IN        CNAME vpn5
 ns6                     86400     IN        CNAME vpn6
+ns7                     86400     IN        CNAME vpn7
 
 ; ##### PGP
 pgp                     86400     IN        A     10.116.136.1
