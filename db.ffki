@@ -75,7 +75,7 @@ ntp.services            86400     IN        AAAA  fda1:384a:74de:4242::ff00
 ; disabled 4->vpn2:
 4.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff02
 5.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff05
-5.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff06
+6.ntp.services          86400     IN        AAAA  fda1:384a:74de:4242::ff06
 
 
 ; ##### OpenWrt Repos
