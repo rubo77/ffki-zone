@@ -47,6 +47,7 @@ graph                   86400     IN        CNAME services
 gluon                   86400     IN        CNAME services
 www.gluon               86400     IN        CNAME services
 debian                  86400     IN        CNAME services
+monitoring              86400     IN        CNAME services
 www                     86400     IN        CNAME services
 ; ##### Meshviewer
 mesh                    86400	    IN	      CNAME services
