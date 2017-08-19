@@ -131,7 +131,7 @@ ns2.medusa              86400     IN        A     10.116.240.1
 tp-router               86400     IN        A     10.116.240.4
                                             AAAA  fda1:384a:74de:4242::a74:f004
 
-; ##### plagis - {wonka,sargon}@toppoint.de
+; ##### plagis - sargon@toppoint.de
 pi.plagis               86400     IN        AAAA  fda1:384a:74de:4242:ba27:ebff:fe38:5811
 www.pi.plagis           86400     IN        CNAME pi.plagis
 
