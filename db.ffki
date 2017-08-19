@@ -135,13 +135,13 @@ tp-router               86400     IN        A     10.116.240.4
 pi.plagis               86400     IN        AAAA  fda1:384a:74de:4242:ba27:ebff:fe38:5811
 www.pi.plagis           86400     IN        CNAME pi.plagis
 
-; ##### sk36 - wklaebe@toppoint.de
-ns1.sk36                86400     IN        AAAA  fda1:384a:74de:4242::555
-ns1.sk36                86400     IN        A     10.116.255.5
-ns2.sk36                86400     IN        A     10.116.255.5
-ns2.sk36                86400     IN        AAAA  fda1:384a:74de:4242::555
-sk36                    86400     IN        NS    ns1.sk36
-sk36                    86400     IN        NS    ns2.sk36
+; ##### wklaebe@toppoint.de
+ns1.wonka               86400     IN        AAAA  fda1:384a:74de:4242::555
+ns1.wonka               86400     IN        A     10.116.255.5
+ns2.wonka               86400     IN        A     10.116.255.5
+ns2.wonka               86400     IN        AAAA  fda1:384a:74de:4242::555
+wonka                   86400     IN        NS    ns1.sk36
+wonka                   86400     IN        NS    ns2.sk36
 
 ; #####
 pirol                   86400     IN        AAAA  fda1:384a:74de:4242:215:afff:fea5:fdc8
