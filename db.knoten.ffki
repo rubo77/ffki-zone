@@ -1,3 +1,5 @@
+; generated with https://github.com/freifunk-kiel/nodes-bind/blob/master/createdb.sh
+
 blumenthal1.knoten 					86400 	IN 	AAAA 	fda1:384a:74de:4242:a2f3:c1ff:fed8:b384
 roskilde.knoten 					86400 	IN 	AAAA 	fda1:384a:74de:4242:32b5:c2ff:fed5:f9f0
 nifgel23.knoten 					86400 	IN 	AAAA 	fda1:384a:74de:4242:c24a:ff:fe34:4c94

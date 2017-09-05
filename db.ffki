@@ -1,6 +1,6 @@
 $TTL 86400
 $ORIGIN ffki.
-@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2017090503 1h 15m 1w 1d
+@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2017090504 1h 15m 1w 1d
                                   IN        NS	  vpn1
                                   IN        NS    vpn2
                                   IN        NS    vpn3
