@@ -198,4 +198,4 @@ www.krah                86400     IN        CNAME krah
 leaena                  86400     IN        AAAA  fda1:384a:74de:4242:f6ec:38ff:fee3:cbce
 www.leaena              86400     IN        CNAME leaena
 
-$INCLUDE db.knoten.ffki ffki.
+$INCLUDE /etc/bind/zones/ffki/db.knoten.ffki
