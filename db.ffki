@@ -1,6 +1,6 @@
 $TTL 86400
 $ORIGIN ffki.
-@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2017090301 1h 15m 1w 1d
+@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2017090501 1h 15m 1w 1d
                                   IN        NS	  vpn1
                                   IN        NS    vpn2
                                   IN        NS    vpn3
@@ -197,3 +197,5 @@ www.krah                86400     IN        CNAME krah
 ; #####
 leaena                  86400     IN        AAAA  fda1:384a:74de:4242:f6ec:38ff:fee3:cbce
 www.leaena              86400     IN        CNAME leaena
+
+$INCLUDE db.knoten.ffki
