@@ -1,6 +1,6 @@
 $TTL 86400
 $ORIGIN ffki.
-@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2017090505 1h 15m 1w 1d
+@                                 IN        SOA   vpn0 ffki-noc.freifunk.in-kiel.de. 2018030700 1h 15m 1w 1d
                                   IN        NS	  vpn1
                                   IN        NS    vpn2
                                   IN        NS    vpn3
@@ -141,8 +141,8 @@ ns1.wonka               86400     IN        AAAA  fda1:384a:74de:4242::555
 ns1.wonka               86400     IN        A     10.116.255.5
 ns2.wonka               86400     IN        A     10.116.255.5
 ns2.wonka               86400     IN        AAAA  fda1:384a:74de:4242::555
-wonka                   86400     IN        NS    ns1.sk36
-wonka                   86400     IN        NS    ns2.sk36
+wonka                   86400     IN        NS    ns1.wonka
+wonka                   86400     IN        NS    ns2.wonka
 
 ; #####
 pirol                   86400     IN        AAAA  fda1:384a:74de:4242:215:afff:fea5:fdc8
